@@ -1,0 +1,44 @@
+IoT-Based Environmental Monitoring System using ThingSpeak and MQTT
+
+Overview
+This project demonstrates a cloud-based IoT system that collects environmental sensor data using virtual sensors and publishes it to ThingSpeak via the MQTT protocol. The system simulates real-world environmental monitoring by generating random sensor values for temperature, humidity, and CO2 levels.
+
+Features
+- Virtual Sensor Simulation: Generates random data for temperature, humidity, and CO2.
+- MQTT Communication: Publishes sensor data to ThingSpeak using the MQTT protocol.
+- Cloud-based Data Storage: Stores and retrieves data using ThingSpeak's API.
+- Data Visualization: Allows retrieval of real-time and historical data.
+
+Technologies Used
+- Python (paho-mqtt, requests)
+- ThingSpeak (Cloud platform for IoT data visualization)
+- MQTT Protocol
+
+Setup Instructions
+
+1. Install Dependencies
+Ensure you have Python installed, then install the required package:
+
+pip install paho-mqtt requests
+
+2. Configure MQTT Connection
+Modify the following parameters in the Python script with your ThingSpeak credentials:
+
+MQTT_BROKER = "mqtt3.thingspeak.com"
+MQTT_PORT = 1883
+MQTT_USERNAME = "YOUR_THINGSPEAK_USERNAME"
+MQTT_PASSWORD = "YOUR_THINGSPEAK_PASSWORD"
+MQTT_TOPIC = "channels/YOUR_CHANNEL_ID/publish/YOUR_WRITE_API_KEY"
+
+3. Run the Virtual Sensor Program
+Execute the script to start publishing sensor data:
+
+python sensor_publisher.py
+
+Troubleshooting
+- If you face MQTT connection issues, check [ThingSpeak Status](https://status.mathworks.com/).
+- Ensure your Write API Key is correctly configured in the MQTT topic.
+- Verify that the channel is set to public or has the correct API permissions.
+
+Author
+Jay Bhanushali
