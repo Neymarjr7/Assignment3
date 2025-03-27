@@ -37,7 +37,7 @@ MQTT_TOPIC = "channels/YOUR_CHANNEL_ID/publish/YOUR_WRITE_API_KEY"
 3. Open the terminal in VS Code (View > Terminal).
 4. Run the script using the following command:
 
-python sensor_publisher.py
+python iot_mqtt_sensors.py
 
 Troubleshooting
 - If you face MQTT connection issues, check [ThingSpeak Status](https://status.mathworks.com/).
