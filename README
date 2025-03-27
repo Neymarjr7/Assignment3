@@ -30,8 +30,12 @@ MQTT_USERNAME = "YOUR_THINGSPEAK_USERNAME"
 MQTT_PASSWORD = "YOUR_THINGSPEAK_PASSWORD"
 MQTT_TOPIC = "channels/YOUR_CHANNEL_ID/publish/YOUR_WRITE_API_KEY"
 
-3. Run the Virtual Sensor Program
-Execute the script to start publishing sensor data:
+3. Run the Virtual Sensor Program in VS Code
+
+1. Open Visual Studio Code (VS Code).
+2. Open the folder containing your Python script.
+3. Open the terminal in VS Code (View > Terminal).
+4. Run the script using the following command:
 
 python sensor_publisher.py
 
